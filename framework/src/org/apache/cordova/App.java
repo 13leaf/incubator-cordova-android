@@ -76,6 +76,11 @@ public class App extends Plugin {
         }
     }
 
+	@Override
+	public boolean isSynch(String action) {
+		return true;
+	}
+
     //--------------------------------------------------------------------------
     // LOCAL METHODS
     //--------------------------------------------------------------------------
