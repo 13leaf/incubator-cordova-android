@@ -131,18 +131,6 @@ public class CordovaChromeClient extends WebChromeClient {
                     result.cancel();
                     }
                 });
-        dlg.setOnKeyListener(new DialogInterface.OnKeyListener() {
-            //DO NOTHING
-            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
-                if(keyCode == KeyEvent.KEYCODE_BACK)
-                {
-                    result.cancel();
-                    return false;
-                }
-                else
-                    return true;
-                }
-            });
         dlg.create();
         dlg.show();
         return true;
